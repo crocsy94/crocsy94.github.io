@@ -1,0 +1,97 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+	<title >Dota 2 statistic</title >
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/png" href="http://www.gosugamers.net/images/icons/games/dota2.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head >
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links" >
+			<li ><a href="index.html" >Home</a ></li >
+			<li ><a href="centrality_analysis.html" >Centrality analysis</a ></li >
+			<li ><a href="community_analysis.html" >Community analysis</a ></li >
+			<li ><a href="chat_analysis.html" >Chat analysis</a ></li >
+			<li ><a href="sentiment_analysis.html" >Sentiment analysis</a ></li >
+			<li ><a href="data_set.html" >Data set</a ></li >
+		</ul >
+	</nav>
+
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>Pro players</p>
+				<h2>Communities</h2>
+			</header>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<p>Network analysis</p>
+						<h2>Detect communitied within the word of Dota</h2>
+					</header>
+					<p>
+						In the game of Dota, when a player is about to start a game, the region will be 
+						automatically selected from a predefined set of regions (length of this list: ~20) based on IP address.
+						Our hypotheses is that using the Louvain-algorithm the detection of different communities is possible.
+					</p>
+					<div style="text-align:center">
+						<img src="images/regions.png" alt="" />
+					</div>
+					<p>
+						After running the algorithm, it detected around 10 communities between the pro players we are working with.
+						To make the results more exciting and expressive, istead of displaying the user_ids we decided to work with the country 
+						code of these players, make a set of them. With the help of an external API, the country codes were transformed to country names.
+						Just a few of these communities were presented here. 
+					</p>
+					<div style="text-align:center">
+						<img src="images/community_res.png" alt="" />
+					</div>
+					<p>
+						Note that some countries appear in multiple communities, the reason for this is that there are players who are located for 
+						example in Australia but plays most of the time with players from eastern countries. Because of this particular case 
+						Australia will appear in the eastern community. But there will be another Australian player who may play within his/her own country.
+						In this case Australia as a country will also appear in the region of Australia.
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section class="wrapper style3" >
+		<div class="inner" >
+			<header class="align-center" >
+				<p >Dániel Horváth, Lóránt Gulyás, Imre Nagy</p >
+				<h2 >From the pens of three devoted player...</h2 >
+				<div class="copyright" >
+					&copy; All rights reserved.
+				</div >
+			</header >
+		</div >
+	</section >
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+  <title >Dota 2 statistic</title >
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/png" href="http://www.gosugamers.net/images/icons/games/dota2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head >
+
+<body class="subpage" >
+  <!-- Header -->
+  <header id="header" >
+    <a href="#menu" >Menu</a >
+  </header >
+
+  <!-- Nav -->
+  <nav id="menu" >
+    <ul class="links" >
+      <li ><a href="index.html" >Home</a ></li >
+      <li ><a href="centrality_analysis.html" >Centrality analysis</a ></li >
+      <li ><a href="community_analysis.html" >Community analysis</a ></li >
+      <li ><a href="chat_analysis.html" >Chat analysis</a ></li >
+      <li ><a href="sentiment_analysis.html" >Sentiment analysis</a ></li >
+      <li ><a href="data_set.html" >Data set</a ></li >
+    </ul >
+  </nav >
+
+  <!-- One -->
+  <section id="One" class="wrapper style3" >
+    <div class="inner" >
+      <header class="align-center" >
+        <p >Take a look on the</p >
+        <h2 >Data set</h2 >
+      </header >
+    </div >
+  </section >
+
+  <!-- Two -->
+  <section id="two" class="wrapper style2" >
+    <div class="inner" >
+      <div class="box" >
+        <div class="content" >
+          <header class="align-center" >
+            <p >Where did our data</p >
+            <h2 >come from?</h2 >
+          </header >
+          <p >
+            <span class="image right" >
+              <img src="images/drow.png" alt="" >
+            </span >
+            The data set that we used was fetched from an open source
+            <a target="_blank"
+               href="https://docs.opendota.com/" >API</a >. This provided us all kinds of data, from player profiles
+            to match details. Since we were focusing on pro matches and our own statistics, we fetched the
+            statistics of about 1400 professional matches, and 100-100 matches from our profiles and some friends'
+            profiles, so we ended up with around 1900 matches in total.
+          </p >
+
+          <p >Each match contains 10 players and the chat log. Every chat message is stored and connected to an
+              account, which gave a table that was used to build up the <a target="_blank"
+                                                                           href="sentiment_analysis.html" >sentiment
+            </a > and <a target="_blank" href="chat_analysis.html" >chat analysis</a >. We collected over 17000 chat
+              messages.
+          </p >
+
+          <p >
+            The profiles also contained other interesting information apart from the matches played on that account.
+            We used the nationality and the MMR (match making rating) for grouping the results.
+          </p >
+
+          <p style="text-align: center" >
+            <span class="image" ><img src="images/data_set.png" alt="" ></span >
+          </p >
+
+          <p >
+            This is the data structure we used for our solution. This fairly easy structure gave us simple queries
+            and a fair performance.
+          </p >
+
+          <p style="text-align: center" >
+            <a class="button special" href="https://github.com/crocsy94/SocialGraph/raw/master/dota.db" >
+              Download our database!
+            </a >
+          </p >
+
+        </div >
+      </div >
+    </div >
+
+  </section >
+
+  <!-- Footer -->
+  <section class="wrapper style3" >
+    <div class="inner" >
+      <header class="align-center" >
+        <p >Dániel Horváth, Lóránt Gulyás, Imre Nagy</p >
+        <h2 >From the pens of three devoted player...</h2 >
+        <div class="copyright" >
+          &copy; All rights reserved.
+        </div >
+      </header >
+    </div >
+  </section >
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js" ></script >
+  <script src="assets/js/jquery.scrollex.min.js" ></script >
+  <script src="assets/js/skel.min.js" ></script >
+  <script src="assets/js/util.js" ></script >
+  <script src="assets/js/main.js" ></script >
+
+</body >
+</html >

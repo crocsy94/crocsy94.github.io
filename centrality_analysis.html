@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+  <title >Dota 2 statistic</title >
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/png" href="http://www.gosugamers.net/images/icons/games/dota2.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head >
+<body class="subpage" >
+
+  <!-- Header -->
+  <header id="header" >
+    <a href="#menu" >Menu</a >
+  </header >
+
+  <!-- Nav -->
+  <nav id="menu" >
+    <ul class="links" >
+      <li ><a href="index.html" >Home</a ></li >
+      <li ><a href="centrality_analysis.html" >Centrality analysis</a ></li >
+      <li ><a href="community_analysis.html" >Community analysis</a ></li >
+      <li ><a href="chat_analysis.html" >Chat analysis</a ></li >
+      <li ><a href="sentiment_analysis.html" >Sentiment analysis</a ></li >
+      <li ><a href="data_set.html" >Data set</a ></li >
+    </ul >
+  </nav >
+
+  <!-- One -->
+  <section id="One" class="wrapper style3" >
+    <div class="inner" >
+      <header class="align-center" >
+        <p >Centrality Analysis</p >
+        <h2 >Between pro players</h2 >
+      </header >
+    </div >
+  </section >
+
+  <!-- Two -->
+  <section id="two" class="wrapper style2" >
+    <div class="inner" >
+      <div class="box" >
+        <div class="content" >
+          <header class="align-center" >
+            <p >Find the most</p >
+            <h2 >Popular players</h2 >
+          </header >
+          <p >At the starting point of this project we were courious about the most known and viral players.
+              Therefore we applied several centrality analysis, which will provide us some interesting insights about the pro players in
+              the world of dota. In order to be able to apply these techniques we needed to extract the giant connected component
+              because centrality only works with a fully connected graph.
+          </p >
+          <div style="text-align:center" >
+            <img src="images/gcc.png" alt="" />
+          </div >
+
+          <p >
+            The whole graph can be seen on the left side, and the extracted gianc connected component can be seen on the right side.
+            From now on, we will only work with the GCC. We calculated betweenness centrality, eigenvector centrality and degree centrality.
+            <br >
+          </p >
+          <p >
+            The results of betweenness centrality:
+          <ul >
+            <li ><a href="https://www.dotabuff.com/players/86741690" >Lubby</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/153749549" >xRag ~ L ҉҈...</a ></li >
+            <li >咻~咻~</li >
+            <li ><a href="https://www.dotabuff.com/esports/players/383949208-medal-is-life" >Medal is life</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/175650369" >Andre Astora</a ></li >
+          </ul >
+          <span class="image right" >
+              <img src="images/3870_dota2___lycan.jpg" alt="" >
+            </span >
+          Results for Eigenvector centrality:
+          <ul >
+            <li ><a href="https://www.dotabuff.com/players/89117038" >YapzOr</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/97590558" >Ace</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/87278757" >Puppey</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/111473138" >panda</a ></li >
+            <li ><a href="https://www.dotabuff.com/esports/players/107803494-ori" >Ori</a ></li >
+          </ul >
+          And for the degree centrality:
+          <ul >
+            <li ><a href="https://www.dotabuff.com/players/89117038" >YapzOr</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/97590558" >Ace</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/87278757" >Puppey</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/477614559" >自在极意功</a ></li >
+            <li ><a href="https://www.dotabuff.com/players/117990312" >HYNB!</a ></li >
+          </ul >
+          </p>
+          <p >
+            We provided some links, so if you are interested in these players, you can check their statistics there.
+          </p >
+        </div >
+      </div >
+    </div >
+  </section >
+
+  <!-- Footer -->
+  <section class="wrapper style3" >
+    <div class="inner" >
+      <header class="align-center" >
+        <p >Dániel Horváth, Lóránt Gulyás, Imre Nagy</p >
+        <h2 >From the pens of three devoted player...</h2 >
+        <div class="copyright" >
+          &copy; All rights reserved.
+        </div >
+      </header >
+    </div >
+  </section >
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js" ></script >
+  <script src="assets/js/jquery.scrollex.min.js" ></script >
+  <script src="assets/js/skel.min.js" ></script >
+  <script src="assets/js/util.js" ></script >
+  <script src="assets/js/main.js" ></script >
+
+</body >
+</html >

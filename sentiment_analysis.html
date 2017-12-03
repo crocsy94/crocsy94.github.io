@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html >
+<head >
+	<title >Dota 2 statistic</title >
+	<meta charset="utf-8" />
+	<link rel="shortcut icon" type="image/png" href="http://www.gosugamers.net/images/icons/games/dota2.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head >
+<body class="subpage">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="#menu">Menu</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="menu">
+		<ul class="links" >
+			<li ><a href="index.html" >Home</a ></li >
+			<li ><a href="centrality_analysis.html" >Centrality analysis</a ></li >
+			<li ><a href="community_analysis.html" >Community analysis</a ></li >
+			<li ><a href="chat_analysis.html" >Chat analysis</a ></li >
+			<li ><a href="sentiment_analysis.html" >Sentiment analysis</a ></li >
+			<li ><a href="data_set.html" >Data set</a ></li >
+		</ul >
+	</nav>
+
+	<!-- One -->
+	<section id="One" class="wrapper style3">
+		<div class="inner">
+			<header class="align-center">
+				<p>Chat based</p>
+				<h2>Sentiment analysis</h2>
+			</header>
+		</div>
+	</section>
+
+	<!-- Two -->
+	<section id="two" class="wrapper style2">
+		<div class="inner">
+			<div class="box">
+				<div class="content">
+					<header class="align-center">
+						<p>Winning makes you happier</p>
+						<h2>But... Does it?</h2>
+					</header>
+					<p>Does Dota make your life happier? Is winning satisfying? We looked at the representative words present on the chat for both the winning and the losing side and compared them, in order to find out!</p>
+
+					<p>After dividing the messages into two halfs, to the comments of the winners and losers, we counted the sentiment in each word present. The sentiment values were taken form the <a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0026752">Temporal Patterns of Happiness and Information in a Global Social Network: Hedonometrics and Twitter</a>. This dataset gives us a dictionary of words, with a value of happiness attached to each of them. The happiness values were gathered from measurements.</p>
+
+					<p>At first let's take a look at the happiness levels of the winners' comments. This is done by calculating all the happiness values of all the words in pieces of 200 words a time. The result is: </p>
+
+					<span class="image fit" style="width: 50%; margin: auto"><img src="images/mid_winner_chat_sentiment.PNG" alt="" /></span>
+					
+					<p>Then we did the same with the loser's comments...</p>
+
+					<span class="image fit" style="width: 50%; margin: auto"><img src="images/mid_loser_chat_sentiment.PNG" alt="" /></span>
+
+					<p>As we can see from the results the values are really close for both cases. Our expectation was that we will be able to clearly see the difference of the heights of the values, but the data is quite noisy, this does not gives us a good comparision. Let's try differently.</p>
+
+					<p>We calculated the average happiness value for both cases. The results are:</p>
+
+					<div class="table-wrapper" style="width: 50%; margin: auto">
+							<table>
+								<thead>
+									<tr>
+										<th>Winners average happiness</th>
+										<th>Losers average happiness</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2.55686644051</td>
+										<td>2.49209798995</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<p>The difference is really small. It's only 2.3%. This is not enough to confidently say that winning makes you happier. Therefore according to our research, sadly there is no evidence in the chat section of a game that would prove that winning dota 2 games makes your life happier...</p>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<section class="wrapper style3" >
+		<div class="inner" >
+			<header class="align-center" >
+				<p >Dániel Horváth, Lóránt Gulyás, Imre Nagy</p >
+				<h2 >From the pens of three devoted player...</h2 >
+				<div class="copyright" >
+					&copy; All rights reserved.
+				</div >
+			</header >
+		</div >
+	</section >
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>
